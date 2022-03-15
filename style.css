@@ -5,13 +5,34 @@
 
 .container {
     display: grid;
-    grid-template: 100vw / repeat(2, minmax(150px, 250px));
+    grid-template: 100vh / minmax(150px, 1fr) 3fr;
 }
-
-
-
 
 .sidebar {
     background-color: blue;
     grid-area: 1 / 1 / 2 / 2;
+}
+
+.sidebar ul {
+    display: grid;
+    grid-template: repeat(10, auto) / 1fr;
+}
+
+.sidebar li {
+    border: dashed white 1px;
+}
+
+.main {
+    display: grid;
+    grid-template: minmax(100px, .3fr) 1fr / 100%;
+}
+
+.header {
+    background-color: aqua;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.content {
+    background-color: lightcyan;
+    grid-area: 2 / 1 / 3 / 2;
 }
