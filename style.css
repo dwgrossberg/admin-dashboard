@@ -1,0 +1,17 @@
+*, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template: 100vw / repeat(2, minmax(150px, 250px));
+}
+
+
+
+
+.sidebar {
+    background-color: blue;
+    grid-area: 1 / 1 / 2 / 2;
+}
