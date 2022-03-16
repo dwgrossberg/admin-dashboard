@@ -69,11 +69,15 @@
     display: grid;
     grid-template: minmax(100px, .25fr) 1fr / 100%;
     min-height: 500px;
+
 }
 
 .header {
     background-color: #FCB1A6;
     grid-area: 1 / 1 / 2 / 2;
+    box-shadow: gainsboro 1.5px 1.5px;
+    z-index: 100;
+
 }
 
 .content {
@@ -90,10 +94,14 @@
     margin: 25px;
 }
 
-.project-card {
+.project-card,
+.announcements,
+.trending {
     background-color: #FFDCCC;
     height: 100%;
-   
+    border-radius: 5px;
+    border-left: #FB6376 5px solid;
+    box-shadow: gainsboro 1px 1px;
 }
 
 .announcement-bar {
@@ -102,10 +110,4 @@
     grid-template: 1fr 1fr / 100%;
     gap: 45px;
     margin: 25px 25px 25px 0;
-}
-
-.announcements,
-.trending {
-    background-color: #FFDCCC;
-    height: 100%;
 }
