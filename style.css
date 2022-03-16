@@ -6,11 +6,14 @@
 .container {
     display: grid;
     grid-template: 100vh / minmax(150px, 1fr) 3fr;
+    min-width: 765px;
+    min-height: 500px;
 }
 
 .sidebar {
     background-color: blue;
     grid-area: 1 / 1 / 2 / 2;
+    min-height: 500px;
 }
 
 .sidebar ul {
@@ -25,6 +28,7 @@
 .main {
     display: grid;
     grid-template: minmax(100px, .3fr) 1fr / 100%;
+    min-height: 500px;
 }
 
 .header {
@@ -41,7 +45,7 @@
 
 .projects {    
     display: grid;
-    grid-template: repeat(2, minmax(100px, 1fr)) / repeat(auto-fit, minmax(150px, 1fr));
+    grid-template: repeat(auto-fit, minmax(50px, 1fr)) / repeat(auto-fit, minmax(150px, 1fr));
     gap: 25px;
     margin: 25px;
 }
