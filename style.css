@@ -48,7 +48,7 @@
 }
 
 .sidebar .logo-text {
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 5px;
 }
 
@@ -91,9 +91,28 @@
 
 .projects {    
     display: grid;
-    grid-template: repeat(auto-fit, minmax(50px, 1fr)) / repeat(auto-fit, minmax(150px, 1fr));
+    grid-template: 10px repeat(auto-fit, minmax(50px, 1fr)) / repeat(2, minmax(150px, 1fr));
     gap: 25px;
     margin: 25px;
+}
+
+.projects p {
+    grid-area: 1 / 1 / 2 / 3;
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+}
+
+.announcement-bar {
+    background-color: #e4e1df;
+    display: grid;
+    grid-template: 10px 1fr 10px 1fr / 100%;
+    gap: 25px;
+    margin: 25px 25px 25px 0;
+}
+
+.announcement-bar p {
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
 }
 
 .project-card,
@@ -106,10 +125,3 @@
     box-shadow: .5px .5px 1px #82877f;
 }
 
-.announcement-bar {
-    background-color: #e4e1df;
-    display: grid;
-    grid-template: 1fr 1fr / 100%;
-    gap: 45px;
-    margin: 25px 25px 25px 0;
-}
