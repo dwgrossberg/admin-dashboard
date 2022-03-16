@@ -42,6 +42,7 @@
 .sidebar .control-text {
     color: white;
     font-family: "Dosis", sans-serif;
+    font-weight: 600;
     font-size: 14px;
     padding: 7px;
     margin-left: 15px;
@@ -79,7 +80,9 @@
     grid-area: 1 / 1 / 2 / 2;
     box-shadow: .5px .5px 2px #82877f;
     z-index: 100;
-    padding: 10px 25px;
+    padding: 15px 25px;
+    font-family: "Dosis", sans-serif;
+
 }
 
 .search-account,
@@ -118,7 +121,17 @@
     font-size: 12px;
     padding: 7px 12px;
     box-shadow: .25px .25px .5px #82877f;
+    color: #343633;
+}
 
+.search input:hover {
+    outline: #93867F;
+    border: .5px solid #93867F;
+}
+
+.search input:focus {
+    outline: #93867F;
+    border: 1px solid #93867F;
 }
 
 .header img[src="img/search.png"], 
@@ -132,6 +145,49 @@
 
 .welcome-action img[src="img/robot.png"]{
     height: 50px;
+}
+
+.welcome-action img[src="img/robot.png"]:hover,
+.search-account img[src="img/robot.png"]:hover{
+    transform: scale(1.05);
+}
+
+.header-menu p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #343633;
+}
+
+.hello-text p {
+    font-size: 12px;
+    color: #343633;
+}
+
+p.hello-name {
+    font-family: 'Bitter', sans-serif;
+    font-size: 20px;
+    color: #343633;
+    padding-top: 5px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    color: #343633;
+}
+
+.buttons button {
+    padding: 8px;
+    font-family: "Dosis", sans-serif;
+    font-size: 12px;
+    color: #343633;
+    border-radius: 16px;
+    border: none;
+    background-color: #5CC8FF;
+    color: white;
+    width: 75px;
+    box-shadow: .25px .25px .5px #82877f;
 }
 
 .content {
@@ -152,6 +208,7 @@
     grid-area: 1 / 1 / 2 / 3;
     font-family: "Dosis", sans-serif;
     font-size: 16px;
+    color: #343633;
 }
 
 .announcement-bar {
@@ -165,6 +222,7 @@
 .announcement-bar p {
     font-family: "Dosis", sans-serif;
     font-size: 16px;
+    color: #343633;
 }
 
 .project-card,
