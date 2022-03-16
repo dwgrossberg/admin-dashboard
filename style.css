@@ -5,13 +5,13 @@
 
 .container {
     display: grid;
-    grid-template: 100vh / minmax(150px, 1fr) 3fr;
+    grid-template: 100vh / minmax(150px, .75fr) 3fr;
     min-width: 765px;
     min-height: 500px;
 }
 
 .sidebar {
-    background-color: blue;
+    background-color: #3730a3;
     grid-area: 1 / 1 / 2 / 2;
     min-height: 500px;
 }
@@ -21,13 +21,32 @@
     grid-template: repeat(10, auto) / 1fr;
 }
 
-.sidebar li {
+.sidebar li,
+.logo {
     border: dashed white 1px;
+    display: flex;
+}
+
+.logo,
+.sidebar li:nth-child(6) {
+    margin-bottom: 45px;
+}
+
+.sidebar .logo-text,
+.sidebar .control-text {
+    color: white;
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.sidebar .logo-text {
+    font-size: 20px;
 }
 
 .main {
     display: grid;
-    grid-template: minmax(100px, .3fr) 1fr / 100%;
+    grid-template: minmax(100px, .25fr) 1fr / 100%;
     min-height: 500px;
 }
 
@@ -58,5 +77,14 @@
 
 .announcement-bar {
     background-color: azure;
+    display: grid;
+    grid-template: 1fr 1fr / 100%;
+    gap: 45px;
+    margin: 25px 25px 25px 0;
+}
 
+.announcements,
+.trending {
+    background-color: aquamarine;
+    height: 100%;
 }
