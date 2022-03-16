@@ -33,6 +33,10 @@
     align-items: center;
 }
 
+.logo:hover {
+    transform: scale(1.1);
+}
+
 .logo,
 .sidebar li:nth-child(6) {
     margin-bottom: 40px;
@@ -42,14 +46,19 @@
 .sidebar .control-text {
     color: white;
     font-family: "Dosis", sans-serif;
-    font-weight: 600;
     font-size: 14px;
     padding: 7px;
     margin-left: 15px;
 }
 
+.sidebar li:hover {
+    transform: scale(1.05);
+    font-weight: 600;
+}
+
 .sidebar .logo-text {
     font-size: 20px;
+    font-weight: 600;
     margin-left: 5px;
 }
 
