@@ -11,9 +11,13 @@
 }
 
 .sidebar {
-    background-color: #3730a3;
+    background-color: #5D2A42;
     grid-area: 1 / 1 / 2 / 2;
     min-height: 500px;
+}
+
+.sidebar .logo {
+    margin-top: 20px;
 }
 
 .sidebar ul {
@@ -23,25 +27,42 @@
 
 .sidebar li,
 .logo {
-    border: dashed white 1px;
     display: flex;
+    align-items: center;
 }
 
 .logo,
 .sidebar li:nth-child(6) {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 
 .sidebar .logo-text,
 .sidebar .control-text {
     color: white;
     font-family: "Dosis", sans-serif;
-    font-size: 16px;
-    padding: 5px;
+    font-size: 14px;
+    padding: 7px;
+    margin-left: 15px;
 }
 
 .sidebar .logo-text {
-    font-size: 20px;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.control-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar img {
+    height: 20px;
+    margin-left: 20px; 
+}
+
+.logo-img img {
+    height: 30px;
 }
 
 .main {
@@ -51,12 +72,12 @@
 }
 
 .header {
-    background-color: aqua;
+    background-color: #FCB1A6;
     grid-area: 1 / 1 / 2 / 2;
 }
 
 .content {
-    background-color: lightcyan;
+    background-color: #FFF9EC;
     grid-area: 2 / 1 / 3 / 2;
     display: grid;
     grid-template: 1fr / 2fr 1fr;
@@ -70,13 +91,13 @@
 }
 
 .project-card {
-    background-color: blanchedalmond;
+    background-color: #FFDCCC;
     height: 100%;
    
 }
 
 .announcement-bar {
-    background-color: azure;
+    background-color: #FFF9EC;
     display: grid;
     grid-template: 1fr 1fr / 100%;
     gap: 45px;
@@ -85,6 +106,6 @@
 
 .announcements,
 .trending {
-    background-color: aquamarine;
+    background-color: #FFDCCC;
     height: 100%;
 }
