@@ -79,7 +79,59 @@
     grid-area: 1 / 1 / 2 / 2;
     box-shadow: .5px .5px 2px #82877f;
     z-index: 100;
+    padding: 10px 25px;
+}
 
+.search-account,
+.welcome-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.search-account {
+    margin-bottom: 15px;
+}
+
+.header-menu,
+.header-welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.search input {
+    width: 400px;
+    height: 25px;
+    border: none;
+    border-radius: 16px;
+    font-family: "Dosis", sans-serif;
+    font-size: 12px;
+    padding: 7px 12px;
+    box-shadow: .25px .25px .5px #82877f;
+
+}
+
+.header img[src="img/search.png"], 
+.header img[src="img/alert.png"] {
+    height: 20px;
+}
+
+.search-account img[src="img/robot.png"]{
+    height: 30px;
+}
+
+.welcome-action img[src="img/robot.png"]{
+    height: 50px;
 }
 
 .content {
