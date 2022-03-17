@@ -5,7 +5,7 @@
 
 .container {
     display: grid;
-    grid-template: 95vh 5vh / minmax(160px, .75fr) 3fr;
+    grid-template: 100vh / minmax(160px, .75fr) 3fr;
     min-width: 765px;
     min-height: 500px;
 }
@@ -79,7 +79,7 @@
 
 .main {
     display: grid;
-    grid-template: minmax(125px, .25fr) 1fr / 100%;
+    grid-template: minmax(125px, .25fr) 1fr 25px / 100%;
     min-height: 500px;
 
 }
@@ -280,6 +280,7 @@ p.hello-name {
     background-color: #e4e1df;
     font-family: "Dosis", sans-serif;
     color: #343633;
+    grid-area: 3 / 1 / 4 / 2;
 
     display: flex;
     flex-direction: row;
