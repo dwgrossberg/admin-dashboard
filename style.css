@@ -153,6 +153,11 @@
     height: 20px;
 }
 
+.header img[src="img/search.png"]:hover, 
+.header img[src="img/alert.png"]:hover {
+    transform: scale(1.05);
+}
+
 .search-account img[src="img/robot.png"]{
     height: 30px;
 }
@@ -182,6 +187,7 @@ p.hello-name {
     font-size: 18px;
     color: #343633;
     padding-top: 5px;
+    letter-spacing: .25px;
 }
 
 .buttons {
@@ -252,9 +258,22 @@ p.hello-name {
     border-radius: 5px;
     border-left: #DEC1FF 5px solid;
     box-shadow: .5px .5px 1px #82877f;
+    overflow: none;
 }
 
+.project-card h3 {
+    font-family: 'Bitter', sans-serif;
+    font-size: 16px;
+    color: #343633;
+    padding: 5px 5px 0 5px;
+}
 
+.project-card p {
+    font-family: "Dosis", sans-serif;
+    font-size: clamp(.5rem, 2vh, 2rem); 
+    color: #343633;
+    padding: 5px 5px 0 5px;
+}
 
 .made-by {
     background-color: #e4e1df;
