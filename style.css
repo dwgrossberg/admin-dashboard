@@ -5,7 +5,7 @@
 
 .container {
     display: grid;
-    grid-template: 95vh 5vh / minmax(150px, .75fr) 3fr;
+    grid-template: 95vh 5vh / minmax(160px, .75fr) 3fr;
     min-width: 765px;
     min-height: 500px;
 }
@@ -79,13 +79,14 @@
 
 .main {
     display: grid;
-    grid-template: minmax(100px, .25fr) 1fr / 100%;
+    grid-template: minmax(125px, .25fr) 1fr / 100%;
     min-height: 500px;
 
 }
 
 .header {
     background-color: #F9F6EE;
+    min-width: 700px;
     grid-area: 1 / 1 / 2 / 2;
     box-shadow: .5px .5px 2px #82877f;
     z-index: 100;
