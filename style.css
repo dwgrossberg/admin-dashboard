@@ -282,6 +282,25 @@ p.hello-name {
     cursor: pointer;
 }
 
+.project-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+}
+
+.project-card img {
+    height: 15px;
+    opacity: .8;
+}
+
+.content img:hover {
+    transform: scale(1.1);
+}
+
 .project-card h3 {
     font-family: 'Bitter', sans-serif;
     font-size: clamp(.75rem, 2vh, 2rem); 
@@ -321,23 +340,14 @@ hr {
     padding: 0;
 }
 
-.project-icons {
+.trending-items {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 15px;
-    position: absolute;
-    right: 15px;
-    bottom: 5px;
+    padding: 0 0 0 10px;
 }
 
-.project-card img {
-    height: 15px;
-    opacity: .8;
-}
-
-.projects img:hover {
-    transform: scale(1.1);
+.trending img {
+    height: 25px;
 }
 
 .made-by {
