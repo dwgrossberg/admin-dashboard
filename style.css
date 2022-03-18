@@ -211,7 +211,7 @@ p.hello-name {
 }
 
 .buttons button:hover {
-    background-color: #DEC1FF;
+    background-color: #7D70BA;
     font-weight: 600;
     box-shadow: 1px 1px 2px #82877f;
 }
@@ -274,14 +274,14 @@ p.hello-name {
     cursor: pointer;
 }
 
-.project-card h3 {
+.content h3 {
     font-family: 'Bitter', sans-serif;
     font-size: clamp(.75rem, 2vh, 2rem); 
     color: #343633;
     padding: 10px 0 0 10px;
 }
 
-.project-card p {
+.content p {
     font-family: "Dosis", sans-serif;
     font-size: clamp(.5rem, 2vh, 2rem); 
     color: #343633;
