@@ -264,6 +264,14 @@ p.hello-name {
     box-shadow: .5px .5px 1px #82877f;
     overflow: none;
     position: relative;
+    padding: 0 5px 0 5px;
+}
+
+.announcements,
+.trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .project-card:hover,
@@ -274,18 +282,43 @@ p.hello-name {
     cursor: pointer;
 }
 
-.content h3 {
+.project-card h3 {
     font-family: 'Bitter', sans-serif;
     font-size: clamp(.75rem, 2vh, 2rem); 
     color: #343633;
     padding: 10px 0 0 10px;
 }
 
-.content p {
+.project-card p {
     font-family: "Dosis", sans-serif;
     font-size: clamp(.5rem, 2vh, 2rem); 
     color: #343633;
     padding: 5px 10px 20px 10px;
+}
+
+.announcements h3,
+.trending h3 { 
+    font-family: 'Bitter', sans-serif;
+    font-size: clamp(.75rem, 1.5vh, 2rem); 
+    color: #343633;
+    padding: 10px 0 0 10px;
+}
+
+.announcements p,
+.trending p { 
+    font-family: "Dosis", sans-serif;
+    font-size: clamp(.75rem, 1.5vh, 2rem); 
+    color: #343633;
+    padding: 0 0 5px 10px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
 }
 
 .project-icons {
@@ -303,7 +336,7 @@ p.hello-name {
     opacity: .8;
 }
 
-.content img:hover {
+.projects img:hover {
     transform: scale(1.1);
 }
 
